@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-use Apps\Http\Contorllers\includeController;
+use App\Http\Controllers\includeController;
 
-Route::get('/icms',[
+Route::get('/',[
     includeController::class,
-    'includeView',
+    'includeView'
 ])->name('includeView');
