@@ -258,13 +258,12 @@
                             <!-- end Dashboard Menu -->
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
-                                <i class="fa-regular fa-money-bills"></i> <span data-key="t-apps">Tution Fees</span>
+                                <i class="fa-regular fa-money-bills"></i> <span data-key="t-apps">Tuition Fees</span>
                                 </a>
                                 <div class="collapse menu-dropdown" id="sidebarApps">
                                     <ul class="nav nav-sm flex-column">
-                                        
                                         <li class="nav-item">
-                                            <a href="apps-chat.html" class="nav-link" data-key="t-chat"> Collect Fees </a>
+                                            <a href="{{route('tuitionFromView')}}" class="nav-link" data-key="t-chat"> Collect Fees </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="apps-file-manager.html" class="nav-link"> <span data-key="t-file-manager">Check Data</span></a>
@@ -496,7 +495,6 @@
 
         <!-- App js -->
         <script src="{{asset('/public/admin/default/')}}/assets/js/app.js"></script>
-
-
     </body>
 </html>
+@yield('adminContent')
