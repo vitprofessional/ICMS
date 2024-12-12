@@ -10,6 +10,7 @@ Route::get('/',[
     'includeView'                           // project main page
 ])->name('includeView');
 
+<<<<<<< Updated upstream
 //tuition fees str
 Route::get('/add-tuition-fees',[
     tuitionController::class,
@@ -17,3 +18,9 @@ Route::get('/add-tuition-fees',[
 ])->name('tuitionFromView');
 
 //tuition fees end
+=======
+Route::get('/new-admission',[
+    includeController::class,
+    'newAdmissionView'
+])->name('newAdmissionView');
+>>>>>>> Stashed changes

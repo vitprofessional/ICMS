@@ -10,4 +10,8 @@ class includeController extends Controller
     public function includeView(){
         return view('includePage');
     }
+
+    public function newAdmissionView(){
+        return view('admission.newAdmission');
+    }
 }
