@@ -1,26 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FrontEnd;
+use App\Http\Controllers\AdminPanel;
 
-use App\Http\Controllers\includeController;
-use App\Http\Controllers\tuitionController;
+Route::get('/', function () {
+    return view('admin.home');
+});
 
-Route::get('/',[
-    includeController::class,
-    'includeView'                           // project main page
-])->name('includeView');
-
-<<<<<<< Updated upstream
-//tuition fees str
-Route::get('/add-tuition-fees',[
-    tuitionController::class,
-    'tuitionFromView'                        // Tuition fees from page
-])->name('tuitionFromView');
-
-//tuition fees end
-=======
 Route::get('/new-admission',[
-    includeController::class,
-    'newAdmissionView'
-])->name('newAdmissionView');
->>>>>>> Stashed changes
+    FrontEnd::class,
+    'newAdmission'
+])->name('newAdmission');
+
+Route::get('/tution',[
+    FrontEnd::class,
+    'tutionFee'
+])->name('tutionFee');

@@ -3,7 +3,7 @@
     <!-- Mirrored from themesbrand.com/velzon/html/default/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Oct 2024 18:08:30 GMT -->
     <head>
         <meta charset="utf-8" />
-        <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+        <title>Dashboard | @yield('title')</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -247,7 +247,7 @@
                                 <div class="collapse menu-dropdown" id="sidebarDashboards">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a href="{{route('newAdmissionView')}}" class="nav-link" data-key="t-analytics">New Addmission </a>
+                                            <a href="{{route('newAdmission')}}" class="nav-link" data-key="t-analytics">New Addmission </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#" class="nav-link" data-key="t-crm">Student List</a>
@@ -263,7 +263,7 @@
                                 <div class="collapse menu-dropdown" id="sidebarApps">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a href="{{route('tuitionFromView')}}" class="nav-link" data-key="t-chat"> Collect Fees </a>
+                                            <a href="{{route('tutionFee')}}" class="nav-link" data-key="t-chat"> Collect Fees </a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="apps-file-manager.html" class="nav-link"> <span data-key="t-file-manager">Check Data</span></a>
